@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Class Alternative</title>
+  <style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+.main {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<a href="index.html">Home</a>
+<div class="city">
+<h2>Jakarta</h2>
+<p>Jakarta adalah ibukota Indonesia</p>
+</div> 
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris adalah ibukota Prancis</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo adalah ibukota Jepang</p>
+</div>
+
+<div class="city">
+<h2>London</h2>
+<p>London adalah ibukota Inggris</p>
+</div> 
+
+<div class="city">
+<h2>Kuala Lumpur</h2>
+<p>Kuala Lumpur adalah ibukota Indonesia</p>
+</div>
+
+<div class="city">
+<h2>Riyadh</h2>
+<p>Riyadh adalah ibukota Arab Saudi</p>
+</div>
+
+<h1>Heading <span class="note">Lele</span> Heading</h1>
+<p>Pempek <span class="note">Lele</span> 10000.</p>
+
+<h2>Contoh lainnya</h2>
+<p>CSS</p>
+
+<h2 class="city">Indonesia</h2>
+<p>Jakarta adalah ibukota Indonesia</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris adalah ibukota Prancis</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo adalah ibukota Jepang</p>
+
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="city main">Indonesia</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+<h2>Age Age Age</h2>
+
+<p>Lanjut</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris adalah ibukota Prancis</p>
+
+<h2>JavaScript</h2>
+<p>Sembunyikan :</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London adalah ibukota Inggris</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris adalah ibukota Prancis</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo adalah ibukota Jepang</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
